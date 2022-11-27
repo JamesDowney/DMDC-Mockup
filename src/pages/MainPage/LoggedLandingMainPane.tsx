@@ -21,7 +21,7 @@ export default function LoggedLandingMainPane() {
         linkTileDescription={
           "The access point for information and assistance on DoD entitlements, benefits, medical readiness, and DMDC website issues for uniformed service members, veterans, retirees, other eligible beneficiaries, and their families."
         }
-        linkAddress={"./beneficiariesLogin.html"}
+        linkAddress={"./beneficiaries.html"}
       />
       <LinkTile
         linkTileBackgroundImage={image2}

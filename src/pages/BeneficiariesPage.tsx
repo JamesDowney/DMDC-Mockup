@@ -22,7 +22,6 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import React from "react";
-import FakeCalendar from "../components/FakeCalendar";
 import Footer from "../components/Footer";
 import LoggedInNavBar from "../components/LoggedInNavBar";
 import theme from "../themes/theme";
@@ -45,7 +44,19 @@ export function BeneficiariesPage() {
           minHeight={"90vh"}
         >
           <VStack>
-            <Spacer minH={420} />
+            <Spacer minH={160} />
+            <Text
+              width={"fit-content"}
+              fontSize={"8xl"}
+              paddingLeft={5}
+              textShadow={
+                "-2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;"
+              }
+              textColor={"white"}
+            >
+              DMDC Beneficiary Support Portal
+            </Text>
+            <Spacer minH={200} />
             <VStack width={"60%"} align={"left"}>
               <Text
                 width={"fit-content"}
@@ -69,25 +80,23 @@ export function BeneficiariesPage() {
                 />
               </InputGroup>
             </VStack>
-            <Flex
-              minHeight={300}
-              width={"100%"}
-              backgroundColor={"gray.200"}
-              padding={"5"}
-            >
-              <HStack alignItems={"top"}>
-                <VStack spacing={5}>
-                  <FakeCalendar />
+            <VStack width={"100%"} backgroundColor={"gray.200"} padding={"5"}>
+              <Flex width={"100%"} marginBottom={10}>
+                <HStack
+                  alignItems={"top"}
+                  width="100%"
+                  justifyContent={"center"}
+                  spacing={"5%"}
+                >
                   <Box
                     minHeight={300}
-                    minWidth={"70%"}
-                    border={"1px"}
-                    borderRadius={"md"}
+                    width={"45%"}
+                    shadow={"dark-lg"}
                     padding={5}
                   >
                     <VStack width={"100%"}>
                       <Text fontSize={"3xl"} textDecoration={"underline"}>
-                        Current Ticket Status
+                        Announcements/System Outages
                       </Text>
                       <HStack alignItems={"top"} width={"100%"}>
                         <VStack alignItems={"left"}>
@@ -114,171 +123,364 @@ export function BeneficiariesPage() {
                       </HStack>
                     </VStack>
                   </Box>
-                </VStack>
-                <VStack spacing={5} width={"50%"}>
-                  <HStack width={"full"} zIndex={100}>
-                    <Spacer />
-                    <Button colorScheme={"blue"}>Report an Outage</Button>
-                    <Button colorScheme={"blue"}>Create a Ticket</Button>
-                  </HStack>
-                  <Box
-                    minHeight={300}
-                    minWidth={"100%"}
-                    border={"1px"}
-                    borderRadius={"md"}
-                    padding={5}
-                  >
-                    <Text fontSize={"3xl"} textDecoration={"underline"}>
-                      Current Ticket Status
-                    </Text>
-                    <SimpleGrid columns={3} spacing={1}>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Case Number
-                      </Text>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Created
-                      </Text>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Status
-                      </Text>
-                      <Link textColor={"blue"}>DSC001123</Link>
-                      <Text>10/31/2022</Text>
-                      <Text>Open</Text>
-                    </SimpleGrid>
+                  <Box width={"45%"}>
+                    <Flex
+                      minHeight={300}
+                      width={"100%"}
+                      shadow={"dark-lg"}
+                      padding={5}
+                      flexDir={"column"}
+                    >
+                      <Box width={"100%"}>
+                        <Text fontSize={"3xl"} textDecoration={"underline"}>
+                          My Cases
+                        </Text>
+                        <SimpleGrid columns={3} spacing={1}>
+                          <Text fontSize={"2xl"} textDecoration={"underline"}>
+                            Case Number
+                          </Text>
+                          <Text fontSize={"2xl"} textDecoration={"underline"}>
+                            Created
+                          </Text>
+                          <Text fontSize={"2xl"} textDecoration={"underline"}>
+                            Status
+                          </Text>
+                          <Link textColor={"blue"}>DSC001123</Link>
+                          <Text>10/31/2022</Text>
+                          <Text>Open</Text>
+                        </SimpleGrid>
+                      </Box>
+                      <Spacer />
+                      <HStack width={"full"}>
+                        <Spacer />
+                        <Button colorScheme={"blue"}>Create a Case</Button>
+                        <Button colorScheme={"blue"}>View all my Cases</Button>
+                      </HStack>
+                    </Flex>
                   </Box>
-                  <Box
-                    minWidth={"100%"}
-                    border={"1px"}
-                    borderRadius={"md"}
-                    padding={5}
-                    zIndex={100}
-                  >
-                    <Text fontSize={"3xl"} textDecoration={"underline"}>
-                      Support Information
-                    </Text>
-                    <Accordion allowMultiple textAlign={"left"}>
-                      <AccordionItem>
-                        <AccordionButton
-                          _expanded={{ bg: "blackAlpha.100" }}
-                          fontSize={"xl"}
-                        >
-                          <Text>ATIMS/NEATS Frequently Asked Questions</Text>
-                          <Spacer />
-                          <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                          <UnorderedList>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>?????????????????????????????</Text>
-                              </ListItem>
-                            </Link>
-                          </UnorderedList>
-                        </AccordionPanel>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionButton
-                          _expanded={{ bg: "blackAlpha.100" }}
-                          fontSize={"xl"}
-                        >
-                          <Text>DBIDS Frequently Asked Questions</Text>
-                          <Spacer />
-                          <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                          <UnorderedList>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>
-                                  My enrollment workstation / access control
-                                  workstation is locked, how can I unlock it?
-                                </Text>
-                              </ListItem>
-                            </Link>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>
-                                  Why does my Crossmatch handheld scanner not
-                                  connect to the server?
-                                </Text>
-                              </ListItem>
-                            </Link>
-                          </UnorderedList>
-                        </AccordionPanel>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionButton
-                          _expanded={{ bg: "blackAlpha.100" }}
-                          fontSize={"xl"}
-                        >
-                          <Text>Hardware Replacement Information</Text>
-                          <Spacer />
-                          <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                          <UnorderedList>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>
-                                  Defense Finance Accounting Service (DFAS)
-                                </Text>
-                              </ListItem>
-                            </Link>
-                          </UnorderedList>
-                        </AccordionPanel>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionButton
-                          _expanded={{ bg: "blackAlpha.100" }}
-                          fontSize={"xl"}
-                        >
-                          <Text>RAPIDS Frequently Asked Questions</Text>
-                          <Spacer />
-                          <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                          <UnorderedList>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>Tricare</Text>
-                              </ListItem>
-                            </Link>
-                          </UnorderedList>
-                        </AccordionPanel>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionButton
-                          _expanded={{ bg: "blackAlpha.100" }}
-                          fontSize={"xl"}
-                        >
-                          <Text>TASS Frequently Asked Questions</Text>
-                          <Spacer />
-                          <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                          <UnorderedList>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>Why is my TASS account suspended?</Text>
-                              </ListItem>
-                            </Link>
-                            <Link href="#" color="blue">
-                              <ListItem>
-                                <Text>
-                                  I have an applicant that has incorrect
-                                  personal information DEERS, what can I do?
-                                </Text>
-                              </ListItem>
-                            </Link>
-                          </UnorderedList>
-                        </AccordionPanel>
-                      </AccordionItem>
-                    </Accordion>
-                  </Box>
-                </VStack>
-                <Spacer />
-              </HStack>
-            </Flex>
+                </HStack>
+              </Flex>
+              <Box width={"60%"} shadow="dark-lg" padding={5}>
+                <Text fontSize={"3xl"} textDecoration={"underline"}>
+                  Frequently Asked Questions
+                </Text>
+                <Accordion allowMultiple textAlign={"left"} width={"100%"}>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Common Issues on Other Websites</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>?????????????????????????????</Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Common DS Logon Issues</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              My enrollment workstation / access control
+                              workstation is locked, how can I unlock it?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              Why does my Crossmatch handheld scanner not
+                              connect to the server?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Health Care Eligibility</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              Defense Finance Accounting Service (DFAS)
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>
+                        How can I add / update a Family Member’s Information in
+                        DEERS
+                      </Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Tricare</Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>
+                        How can I add / update Personal Information in DEERS
+                      </Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>ID / CAC Common Questions</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>
+                        Important Links to DEERS Information / Tools ( CAC or DS
+                        Logon Account Needed)
+                      </Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Military Service Personnel Record</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Other Websites We Support</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Transfer of Educational Benefits</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Trending Topics</Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionButton
+                      _expanded={{ bg: "blackAlpha.100" }}
+                      fontSize={"xl"}
+                    >
+                      <Text>Understand Medicare and Tricare </Text>
+                      <Spacer />
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel>
+                      <UnorderedList>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>Why is my TASS account suspended?</Text>
+                          </ListItem>
+                        </Link>
+                        <Link href="#" color="blue">
+                          <ListItem>
+                            <Text>
+                              I have an applicant that has incorrect personal
+                              information DEERS, what can I do?
+                            </Text>
+                          </ListItem>
+                        </Link>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+                </Accordion>
+              </Box>
+            </VStack>
           </VStack>
         </Box>
         <Footer />

@@ -45,7 +45,19 @@ export function TechnicalSupportPage() {
           minHeight={"90vh"}
         >
           <VStack>
-            <Spacer minH={420} />
+            <Spacer minH={160} />
+            <Text
+              width={"fit-content"}
+              fontSize={"8xl"}
+              paddingLeft={5}
+              textShadow={
+                "-2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;"
+              }
+              textColor={"white"}
+            >
+              DMDC Technical Support Portal
+            </Text>
+            <Spacer minH={200} />
             <VStack width={"60%"} align={"left"}>
               <Text
                 width={"fit-content"}
@@ -69,21 +81,22 @@ export function TechnicalSupportPage() {
                 />
               </InputGroup>
             </VStack>
-            <Flex
-              minHeight={300}
-              width={"100%"}
-              backgroundColor={"gray.200"}
-              padding={"5"}
-            >
-              <HStack alignItems={"top"}>
-                <VStack spacing={5}>
+            <Flex width={"100%"} backgroundColor={"gray.200"} padding={"5"}>
+              <HStack
+                alignItems={"top"}
+                width={"100%"}
+                spacing={"5%"}
+                justifyContent="center"
+              >
+                <VStack spacing={10} width={"45%"}>
                   <FakeCalendar />
                   <Box
                     minHeight={300}
-                    minWidth={"70%"}
-                    border={"1px"}
-                    borderRadius={"md"}
+                    width={"100%"}
+                    shadow={"dark-lg"}
                     padding={5}
+                    position={"relative"}
+                    zIndex={1}
                   >
                     <VStack width={"100%"}>
                       <Text fontSize={"3xl"} textDecoration={"underline"}>
@@ -115,41 +128,43 @@ export function TechnicalSupportPage() {
                     </VStack>
                   </Box>
                 </VStack>
-                <VStack spacing={5} width={"50%"}>
-                  <HStack width={"full"} zIndex={100}>
-                    <Spacer />
-                    <Button colorScheme={"blue"}>Report an Outage</Button>
-                    <Button colorScheme={"blue"}>Create a Ticket</Button>
-                  </HStack>
-                  <Box
+                <VStack spacing={10} width={"45%"}>
+                  <Flex
                     minHeight={300}
-                    minWidth={"100%"}
-                    border={"1px"}
-                    borderRadius={"md"}
+                    width={"100%"}
+                    shadow={"dark-lg"}
                     padding={5}
+                    flexDir={"column"}
                   >
-                    <Text fontSize={"3xl"} textDecoration={"underline"}>
-                      Current Ticket Status
-                    </Text>
-                    <SimpleGrid columns={3} spacing={1}>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Case Number
+                    <Box width={"100%"}>
+                      <Text fontSize={"3xl"} textDecoration={"underline"}>
+                        My Cases
                       </Text>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Created
-                      </Text>
-                      <Text fontSize={"2xl"} textDecoration={"underline"}>
-                        Status
-                      </Text>
-                      <Link textColor={"blue"}>DSC001123</Link>
-                      <Text>10/31/2022</Text>
-                      <Text>Open</Text>
-                    </SimpleGrid>
-                  </Box>
+                      <SimpleGrid columns={3} spacing={1}>
+                        <Text fontSize={"2xl"} textDecoration={"underline"}>
+                          Case Number
+                        </Text>
+                        <Text fontSize={"2xl"} textDecoration={"underline"}>
+                          Created
+                        </Text>
+                        <Text fontSize={"2xl"} textDecoration={"underline"}>
+                          Status
+                        </Text>
+                        <Link textColor={"blue"}>DSC001123</Link>
+                        <Text>10/31/2022</Text>
+                        <Text>Open</Text>
+                      </SimpleGrid>
+                    </Box>
+                    <Spacer />
+                    <HStack width={"full"}>
+                      <Spacer />
+                      <Button colorScheme={"blue"}>Create a Case</Button>
+                      <Button colorScheme={"blue"}>View all my Cases</Button>
+                    </HStack>
+                  </Flex>
                   <Box
                     minWidth={"100%"}
-                    border={"1px"}
-                    borderRadius={"md"}
+                    shadow={"dark-lg"}
                     padding={5}
                     zIndex={100}
                   >
@@ -276,7 +291,6 @@ export function TechnicalSupportPage() {
                     </Accordion>
                   </Box>
                 </VStack>
-                <Spacer />
               </HStack>
             </Flex>
           </VStack>
