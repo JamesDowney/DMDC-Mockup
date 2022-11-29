@@ -25,7 +25,7 @@ const config = {
   }, {}),
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
   },
   devServer: {
     open: true,
