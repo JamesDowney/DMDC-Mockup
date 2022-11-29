@@ -10,7 +10,11 @@ import {
 import React from "react";
 import image from "../assets/header_title_desktop.png";
 
-export default function LoggedInNavBar() {
+interface props {
+  homeLink: string;
+}
+
+export default function LoggedInNavBar(props: props) {
   return (
     <Flex
       as={"header"}
@@ -23,12 +27,14 @@ export default function LoggedInNavBar() {
       zIndex={200}
     >
       <Flex width={"100%"} fontSize={"x-large"}>
-        <Image
-          src={image}
-          height={"fit-content"}
-          width={"fit-content"}
-          padding={10}
-        />
+        <Link href={"./index.html"}>
+          <Image
+            src={image}
+            height={"fit-content"}
+            width={"fit-content"}
+            padding={10}
+          />
+        </Link>
         <Spacer />
         <HStack
           maxHeight={100}
@@ -38,7 +44,7 @@ export default function LoggedInNavBar() {
           marginY={10}
           textColor={"white"}
         >
-          <Link href={"./loggedIndex.html"}>Home</Link>
+          <Link href={props.homeLink}>Home</Link>
           <Link href={"./knowledge.html"}>Knowledge</Link>
           <Link href={"./knowledge.html"}>Notifications</Link>
           <Link href={"./knowledge.html"}>My Profile</Link>

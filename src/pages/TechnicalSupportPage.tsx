@@ -32,7 +32,7 @@ export function TechnicalSupportPage() {
   return (
     <ChakraProvider theme={theme}>
       <VStack backgroundColor={"gray.200"}>
-        <LoggedInNavBar />
+        <LoggedInNavBar homeLink="./technicalSupport.html" />
         <Box
           textAlign="center"
           backgroundImage={image}

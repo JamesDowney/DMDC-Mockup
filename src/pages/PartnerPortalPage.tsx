@@ -24,7 +24,7 @@ export function PartnerPortalPage() {
   return (
     <ChakraProvider theme={theme}>
       <VStack backgroundColor={"gray.200"}>
-        <LoggedInNavBar />
+        <LoggedInNavBar homeLink="./partnerPortal.html" />
         <Box
           textAlign="center"
           backgroundImage={image}

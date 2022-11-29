@@ -33,7 +33,19 @@ export const MainPage = () => (
         minHeight={"90vh"}
       >
         <VStack>
-          <Spacer minH={420} />
+          <Spacer minH={160} />
+          <Text
+            width={"fit-content"}
+            fontSize={"8xl"}
+            paddingLeft={5}
+            textShadow={
+              "-2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;"
+            }
+            textColor={"white"}
+          >
+            DMDC Customer Connect
+          </Text>
+          <Spacer minH={200} />
           <VStack width={"60%"} align={"left"}>
             <Text
               width={"fit-content"}

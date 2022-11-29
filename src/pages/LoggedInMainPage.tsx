@@ -20,7 +20,7 @@ import backgroundImage from "../assets/191111-A-IW468-502.jpg";
 export const LoggedInMainPage = () => (
   <ChakraProvider theme={theme}>
     <VStack backgroundColor={"gray.200"}>
-      <LoggedInNavBar />
+      <LoggedInNavBar homeLink={"./index.html"} />
       <Box
         textAlign="center"
         backgroundImage={backgroundImage}
@@ -33,7 +33,18 @@ export const LoggedInMainPage = () => (
         minHeight={"90vh"}
       >
         <VStack>
-          <Spacer minH={420} />
+          <Spacer minH={160} />
+          <Text
+            width={"fit-content"}
+            fontSize={"8xl"}
+            textShadow={
+              "-2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;"
+            }
+            textColor={"white"}
+          >
+            DMDC Customer Connect
+          </Text>
+          <Spacer minH={200} />
           <VStack width={"60%"} align={"left"}>
             <Text
               width={"fit-content"}

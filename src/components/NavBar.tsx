@@ -23,12 +23,14 @@ export default function NavBar() {
       zIndex={200}
     >
       <Flex width={"100%"} fontSize={"x-large"}>
-        <Image
-          src={image}
-          height={"fit-content"}
-          width={"fit-content"}
-          padding={10}
-        />
+        <Link href={"./index.html"}>
+          <Image
+            src={image}
+            height={"fit-content"}
+            width={"fit-content"}
+            padding={10}
+          />
+        </Link>
         <Spacer />
         <HStack
           maxHeight={100}

@@ -31,7 +31,7 @@ export function BeneficiariesPage() {
   return (
     <ChakraProvider theme={theme}>
       <VStack backgroundColor={"gray.200"}>
-        <LoggedInNavBar />
+        <LoggedInNavBar homeLink={"./beneficiaries.html"} />
         <Box
           textAlign="center"
           backgroundImage={image}
@@ -80,17 +80,19 @@ export function BeneficiariesPage() {
                 />
               </InputGroup>
             </VStack>
-            <VStack width={"100%"} backgroundColor={"gray.200"} padding={"5"}>
-              <Flex width={"100%"} marginBottom={10}>
-                <HStack
-                  alignItems={"top"}
-                  width="100%"
-                  justifyContent={"center"}
-                  spacing={"5%"}
-                >
+            <HStack
+              width={"100%"}
+              backgroundColor={"gray.200"}
+              spacing={"5%"}
+              padding={5}
+              align={"top"}
+              justify={"center"}
+            >
+              <Flex width={"45%"}>
+                <VStack width="100%" spacing={10}>
                   <Box
                     minHeight={300}
-                    width={"45%"}
+                    width={"100%"}
                     shadow={"dark-lg"}
                     padding={5}
                   >
@@ -123,7 +125,7 @@ export function BeneficiariesPage() {
                       </HStack>
                     </VStack>
                   </Box>
-                  <Box width={"45%"}>
+                  <Box width={"100%"}>
                     <Flex
                       minHeight={300}
                       width={"100%"}
@@ -158,9 +160,9 @@ export function BeneficiariesPage() {
                       </HStack>
                     </Flex>
                   </Box>
-                </HStack>
+                </VStack>
               </Flex>
-              <Box width={"60%"} shadow="dark-lg" padding={5}>
+              <Box width={"45%"} shadow="dark-lg" padding={5}>
                 <Text fontSize={"3xl"} textDecoration={"underline"}>
                   Frequently Asked Questions
                 </Text>
@@ -480,7 +482,7 @@ export function BeneficiariesPage() {
                   </AccordionItem>
                 </Accordion>
               </Box>
-            </VStack>
+            </HStack>
           </VStack>
         </Box>
         <Footer />
