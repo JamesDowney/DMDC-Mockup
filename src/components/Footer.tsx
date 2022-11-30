@@ -43,14 +43,48 @@ export default function Footer() {
           width="100%"
           justifyContent={"right"}
         >
-          <Link href={"#"}>Accessibility/Section 508</Link>
-          <Link href={"#"}>USA.gov</Link>
-          <Link href={"#"}>No Fear Act Notice</Link>
-          <Link href={"#"}>Privacy & Security Notice</Link>
-          <Link href={"#"}>Security Statement</Link>
-          <Link href={"#"}>Contact DMDC</Link>
-          <Link href={"#"}>DMDC Home Page</Link>
-          <Link href={"#"}>DHRA Home Page</Link>
+          <Link
+            target={"_blank"}
+            href={"https://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx"}
+          >
+            Accessibility/Section 508
+          </Link>
+          <Link target={"_blank"} href={"https://www.usa.gov/"}>
+            USA.gov
+          </Link>
+          <Link
+            target={"_blank"}
+            href={"https://www.dhra.mil/website/headquarters/info/nofear.shtml"}
+          >
+            No Fear Act Notice
+          </Link>
+          <Link
+            target={"_blank"}
+            href={"https://dwp.dmdc.osd.mil/dwp/app/privacy-security"}
+          >
+            Privacy & Security Notice
+          </Link>
+          <Link
+            target={"_blank"}
+            href={"https://dwp.dmdc.osd.mil/dwp/app/security-statement"}
+          >
+            Security Statement
+          </Link>
+          <Link
+            target={"_blank"}
+            href={"https://dwp.dmdc.osd.mil/dwp/app/faqs"}
+          >
+            Contact DMDC
+          </Link>
+          <Link
+            target={"_blank"}
+            href={"https://dwp.dmdc.osd.mil/dwp/app/main"}
+          >
+            DMDC Home Page
+          </Link>
+          <Link target={"_blank"} href={"https://www.dhra.mil/"}>
+            DHRA Home Page
+          </Link>
         </HStack>
       </Flex>
     </Box>

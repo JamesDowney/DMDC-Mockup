@@ -13,14 +13,14 @@ import React from "react";
 import Footer from "../components/Footer";
 import LandingMainPane from "./MainPage/LandingMainPane";
 import LandingWidgetPane from "./MainPage/LandingWidgetPane";
-import NavBar from "../components/NavBar";
 import theme from "../themes/theme";
 import backgroundImage from "../assets/191111-A-IW468-502.jpg";
+import NavBarMainPage from "../components/NavBarMainPage";
 
 export const MainPage = () => (
   <ChakraProvider theme={theme}>
     <VStack backgroundColor={"gray.200"}>
-      <NavBar />
+      <NavBarMainPage />
       <Box
         textAlign="center"
         backgroundImage={backgroundImage}

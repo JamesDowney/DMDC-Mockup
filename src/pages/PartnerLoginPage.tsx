@@ -22,7 +22,7 @@ import theme from "../themes/theme";
 export const PartnerLoginPage = () => (
   <ChakraProvider theme={theme}>
     <VStack backgroundColor={"gray.200"}>
-      <NavBar />
+      <NavBar loginLink={"./partnerLogin.html"} />
       <Box
         textAlign="center"
         backgroundSize={"100%"}

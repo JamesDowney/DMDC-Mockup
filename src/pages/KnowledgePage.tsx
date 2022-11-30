@@ -1,13 +1,13 @@
 import { Box, ChakraProvider, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import NavBarMainPage from "../components/NavBarMainPage";
 import theme from "../themes/theme";
 
 export const KnowledgePage = () => (
   <ChakraProvider theme={theme}>
     <VStack backgroundColor={"gray.200"}>
-      <NavBar />
+      <NavBarMainPage />
       <Box
         textAlign="center"
         backgroundSize={"100%"}

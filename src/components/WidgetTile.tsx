@@ -17,18 +17,15 @@ function WidgetTile(props: WidgetTileProps) {
       alignSelf={"start"}
     >
       <Flex minHeight={50} textColor={"black"} justifyContent={"center"}>
-        <Text fontSize={"x-large"} alignSelf={"center"} justifySelf={"center"}>
+        <Text
+          fontSize={"3xl"}
+          textDecoration={"underline"}
+          alignSelf={"center"}
+          justifySelf={"center"}
+        >
           <Text>{props.widgetTileTitle}</Text>
         </Text>
       </Flex>
-      <Center>
-        <Divider
-          orientation={"horizontal"}
-          borderColor={"gray.600"}
-          width="80%"
-          alignSelf={"center"}
-        />
-      </Center>
       <Flex fontSize={"lg"} padding={5} minHeight={50} textColor={"black"}>
         {props.widgetTileDescription}
       </Flex>

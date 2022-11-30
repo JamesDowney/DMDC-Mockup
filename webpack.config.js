@@ -7,10 +7,9 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const pages = [
   "index",
-  "generalLogin",
-  "loggedIndex",
   "knowledge",
   "beneficiariesLogin",
+  "beneficiariesLoggedOut",
   "beneficiaries",
   "partnerLogin",
   "partnerPortal",

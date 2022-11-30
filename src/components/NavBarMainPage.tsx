@@ -10,10 +10,7 @@ import {
 import React from "react";
 import image from "../assets/header_title_desktop.png";
 
-interface props {
-  loginLink: string;
-}
-export default function NavBar(props: props) {
+export default function NavBarMainPage() {
   return (
     <Flex
       as={"header"}
@@ -43,9 +40,8 @@ export default function NavBar(props: props) {
           marginY={10}
           textColor={"white"}
         >
-          <Link href={"#"}>Home</Link>
+          <Link href={"./index.html"}>Home</Link>
           <Link href={"./knowledge.html"}>Knowledge</Link>
-          <Link href={props.loginLink}>Login</Link>
           <Link href={"./knowledge.html"}>
             <ChatIcon />
           </Link>

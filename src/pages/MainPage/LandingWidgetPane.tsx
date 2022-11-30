@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
+  Flex,
   HStack,
   Link,
   ListItem,
@@ -28,35 +29,33 @@ export default function LandingWidgetPane() {
       background={"gray.200"}
     >
       <WidgetTile
-        widgetTileTitle={"Announcements"}
+        widgetTileTitle={"News and Updates"}
         widgetTileDescription={
-          <HStack alignItems={"top"}>
-            <VStack alignItems={"left"}>
+          <Flex alignItems={"top"} width={"100%"} padding={5} flexDir={"row"}>
+            <VStack alignItems={"left"} width={"100%"}>
               <Text
                 textAlign={"left"}
                 fontWeight={"bold"}
                 textDecoration={"underline"}
               >
-                Date
+                Announcements
               </Text>
-              <Text textAlign={"left"}>11/02/2022</Text>
+              <Link href={"#"} color="blue">
+                <Text textAlign={"left"}>Tricare Open Season</Text>
+              </Link>
             </VStack>
-            <Spacer />
-            <VStack alignItems={"right"}>
+            <VStack alignItems={"right"} width={"100%"}>
               <Text
                 textAlign={"right"}
                 fontWeight={"bold"}
                 textDecoration={"underline"}
               >
-                Announcement
+                Dates
               </Text>
-              <Link href={"#"} color="blue">
-                <Text textAlign={"right"}>
-                  DSLOGON: Issues with DS Logon Ticket Number: #INC000444
-                </Text>
-              </Link>
+              <Text textAlign={"right"}>11/14/2022 - 12/13/2022</Text>
             </VStack>
-          </HStack>
+            <Spacer />
+          </Flex>
         }
       />
       <WidgetTile
