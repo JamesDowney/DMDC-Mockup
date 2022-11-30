@@ -4,6 +4,7 @@ import React from "react";
 interface WidgetTileProps extends BoxProps {
   widgetTileTitle: string;
   widgetTileDescription?: JSX.Element;
+  isMobile: boolean;
 }
 
 function WidgetTile(props: WidgetTileProps) {
@@ -11,10 +12,10 @@ function WidgetTile(props: WidgetTileProps) {
     <Box
       backgroundColor={"gray.200"}
       minHeight={"-moz-fit-content"}
-      width={"30%"}
+      width={!props.isMobile ? "30%" : 600}
       boxShadow={"dark-lg"}
       zIndex={"100"}
-      alignSelf={"start"}
+      alignSelf={props.isMobile ? "center" : "start"}
     >
       <Flex minHeight={50} textColor={"black"} justifyContent={"center"}>
         <Text

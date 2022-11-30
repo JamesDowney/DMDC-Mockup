@@ -15,6 +15,7 @@ interface LinkTileProps extends LinkBoxProps {
   linkTileDescription?: string;
   linkTileHeight?: number;
   linkAddress: string;
+  isMobile: boolean;
 }
 
 function LinkTile(props: LinkTileProps) {
@@ -27,14 +28,13 @@ function LinkTile(props: LinkTileProps) {
       backgroundSize={600}
       minHeight={400}
       height={props.linkTileHeight}
-      minWidth={"30%"}
+      width={!props.isMobile ? "30%" : 600}
       boxShadow={"dark-lg"}
       onMouseOver={onOpen}
       onMouseLeave={onClose}
     >
       <Flex
         minHeight={50}
-        minWidth={"30%"}
         textColor={"white"}
         background={"blackAlpha.600"}
         shadow={"md"}
@@ -58,7 +58,12 @@ function LinkTile(props: LinkTileProps) {
         justifyContent={"center"}
         hidden={!isOpen}
       >
-        <Text fontSize={"large"} alignSelf={"center"} justifySelf={"center"}>
+        <Text
+          fontSize={"large"}
+          alignSelf={"center"}
+          justifySelf={"center"}
+          padding={2}
+        >
           <LinkOverlay href={props.linkAddress}>
             {props.linkTileDescription}
           </LinkOverlay>
