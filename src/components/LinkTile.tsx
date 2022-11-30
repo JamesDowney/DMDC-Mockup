@@ -29,6 +29,7 @@ function LinkTile(props: LinkTileProps) {
       minHeight={400}
       height={props.linkTileHeight}
       width={!props.isMobile ? "30%" : 600}
+      maxWidth={"95%"}
       boxShadow={"dark-lg"}
       onMouseOver={onOpen}
       onMouseLeave={onClose}

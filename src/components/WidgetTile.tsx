@@ -13,6 +13,7 @@ function WidgetTile(props: WidgetTileProps) {
       backgroundColor={"gray.200"}
       minHeight={"-moz-fit-content"}
       width={!props.isMobile ? "30%" : 600}
+      maxWidth={"95%"}
       boxShadow={"dark-lg"}
       zIndex={"100"}
       alignSelf={props.isMobile ? "center" : "start"}
