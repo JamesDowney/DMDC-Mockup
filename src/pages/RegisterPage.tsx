@@ -32,7 +32,7 @@ export const RegisterPage = () => (
         backgroundRepeat={"no-repeat"}
         backgroundColor={"gray.200"}
         width={"100%"}
-        height={"70vh"}
+        height={"80vh"}
         justifyContent={"center"}
         alignContent={"center"}
       >

@@ -147,7 +147,9 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Common Issues on Other Websites</Text>
+                      <Text textAlign={"left"}>
+                        Common Issues on Other Websites
+                      </Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -155,7 +157,9 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>?????????????????????????????</Text>
+                            <Text textAlign={"left"}>
+                              ?????????????????????????????
+                            </Text>
                           </ListItem>
                         </Link>
                       </UnorderedList>
@@ -166,7 +170,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Common DS Logon Issues</Text>
+                      <Text textAlign={"left"}>Common DS Logon Issues</Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -174,7 +178,7 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               My enrollment workstation / access control
                               workstation is locked, how can I unlock it?
                             </Text>
@@ -182,7 +186,7 @@ export function BeneficiariesPage() {
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               Why does my Crossmatch handheld scanner not
                               connect to the server?
                             </Text>
@@ -196,7 +200,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Health Care Eligibility</Text>
+                      <Text textAlign={"left"}>Health Care Eligibility</Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -204,7 +208,7 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               Defense Finance Accounting Service (DFAS)
                             </Text>
                           </ListItem>
@@ -217,7 +221,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>
+                      <Text textAlign={"left"}>
                         How can I add / update a Family Member’s Information in
                         DEERS
                       </Text>
@@ -228,7 +232,7 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Tricare</Text>
+                            <Text textAlign={"left"}>Tricare</Text>
                           </ListItem>
                         </Link>
                       </UnorderedList>
@@ -239,7 +243,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>
+                      <Text textAlign={"left"}>
                         How can I add / update Personal Information in DEERS
                       </Text>
                       <Spacer />
@@ -249,12 +253,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -268,7 +274,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>ID / CAC Common Questions</Text>
+                      <Text textAlign={"left"}>ID / CAC Common Questions</Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -276,12 +282,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -295,7 +303,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>
+                      <Text textAlign={"left"}>
                         Important Links to DEERS Information / Tools ( CAC or DS
                         Logon Account Needed)
                       </Text>
@@ -306,12 +314,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -325,7 +335,9 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Military Service Personnel Record</Text>
+                      <Text textAlign={"left"}>
+                        Military Service Personnel Record
+                      </Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -333,12 +345,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -352,7 +366,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Other Websites We Support</Text>
+                      <Text textAlign={"left"}>Other Websites We Support</Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -360,12 +374,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -379,7 +395,9 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Transfer of Educational Benefits</Text>
+                      <Text textAlign={"left"}>
+                        Transfer of Educational Benefits
+                      </Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -387,12 +405,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -406,7 +426,7 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Trending Topics</Text>
+                      <Text textAlign={"left"}>Trending Topics</Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -414,12 +434,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
@@ -433,7 +455,9 @@ export function BeneficiariesPage() {
                       _expanded={{ bg: "blackAlpha.100" }}
                       fontSize={"xl"}
                     >
-                      <Text>Understand Medicare and Tricare </Text>
+                      <Text textAlign={"left"}>
+                        Understand Medicare and Tricare{" "}
+                      </Text>
                       <Spacer />
                       <AccordionIcon />
                     </AccordionButton>
@@ -441,12 +465,14 @@ export function BeneficiariesPage() {
                       <UnorderedList>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>Why is my TASS account suspended?</Text>
+                            <Text textAlign={"left"}>
+                              Why is my TASS account suspended?
+                            </Text>
                           </ListItem>
                         </Link>
                         <Link href="#" color="blue">
                           <ListItem>
-                            <Text>
+                            <Text textAlign={"left"}>
                               I have an applicant that has incorrect personal
                               information DEERS, what can I do?
                             </Text>
