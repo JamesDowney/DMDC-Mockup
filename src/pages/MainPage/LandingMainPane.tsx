@@ -37,7 +37,7 @@ export default function LandingMainPane(props: props) {
             linkTileDescription={
               "For DMDC partner organizations such as Tricare, Dental, and Service Project Offices who support service members, their family, and other eligible beneficiaries when there is a problem with their personal, personnel, or benefits and entitlement data in the DEERS database."
             }
-            linkAddress={"./partnerLogin.html"}
+            linkAddress={"./partnerLoggedOut.html"}
           />
           <LinkTile
             isMobile={props.isMobile}
@@ -46,7 +46,7 @@ export default function LandingMainPane(props: props) {
             linkTileDescription={
               "For authorized administrative users that need support with the DMDC infrastructure of systems and applications."
             }
-            linkAddress={"./technicalSupportLogin.html"}
+            linkAddress={"./technicalSupportLoggedOut.html"}
           />
         </HStack>
       )}
@@ -63,7 +63,7 @@ export default function LandingMainPane(props: props) {
             linkTileBackgroundImage={image1}
             linkTileTitle={"Benficiary Support"}
             linkTileDescription={
-              "The access point for information and assistance on DoD entitlements, benefits, medical readiness, and DMDC website issues for uniformed service members, veterans, retirees, other eligible beneficiaries, and their families."
+              "For uniformed service members, veterans, retirees, other eligible beneficiaries, and their families that need assistance with their DoD entitlements, benefits, medical readiness, and DMDC website issues."
             }
             linkAddress={"./beneficiariesLoggedOut.html"}
           />
@@ -72,18 +72,18 @@ export default function LandingMainPane(props: props) {
             linkTileBackgroundImage={image2}
             linkTileTitle={"Partner Portal"}
             linkTileDescription={
-              "For DMDC partner organizations such as Tricare, Dental, and Service Project Offices who support service member, their family, and other eligible beneficiaries when there is a problem with their personal, personnel, or benefits and entitlement data in the DEERS database."
+              "For DMDC partner organizations such as Tricare, Dental, and Service Project Offices who support service members, their family, and other eligible beneficiaries when there is a problem with their personal, personnel, or benefits and entitlement data in the DEERS database."
             }
-            linkAddress={"./partnerLogin.html"}
+            linkAddress={"./partnerLoggedOut.html"}
           />
           <LinkTile
             isMobile={props.isMobile}
             linkTileBackgroundImage={image3}
             linkTileTitle={"Technical Support"}
             linkTileDescription={
-              "Provides worldwide contact center support to the entire DMDC infrastructure of systems and applications."
+              "For authorized administrative users that need support with the DMDC infrastructure of systems and applications."
             }
-            linkAddress={"./technicalSupportLogin.html"}
+            linkAddress={"./technicalSupportLoggedOut.html"}
           />
         </VStack>
       )}

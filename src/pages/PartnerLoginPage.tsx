@@ -80,7 +80,7 @@ export const PartnerLoginPage = () => (
                     <Link>Forgot Username?</Link>
                     <Link>Forgot Password?</Link>
                   </HStack>
-                  <Link>Register for an Account</Link>
+                  <Link href={"./register.html"}>Register for an Account</Link>
                 </VStack>
               </TabPanel>
               <TabPanel>

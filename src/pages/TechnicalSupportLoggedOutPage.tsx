@@ -10,7 +10,7 @@ import {
 import React from "react";
 import Footer from "../components/Footer";
 import theme from "../themes/theme";
-import image from "../assets/200704-N-IQ655-1063M.jpg";
+import image from "../assets/220619-N-IS885-0016Y.jpg";
 import NavBar from "../components/NavBar";
 import AskAQuestion from "../components/AskAQuestion";
 
@@ -55,25 +55,27 @@ export function TechnicalSupportLoggedOutPage() {
               textAlign={"left"}
             >
               <Text width={"80%"}>
-                The DMDC Customer Contact Center Beneficiary Support Portal is
-                the access point for information and assistance on DoD
-                entitlements, benefits, medical readiness, and DMDC website
-                issues for uniformed service members, veterans, retirees, other
-                eligible beneficiaries, and their families.
+                The DMDC Customer Contact Center Technical Support area provides
+                24 / 7/ 365 worldwide Tier 1 Contact Center Support to the
+                entire DMDC infrastructure of systems and applications.
               </Text>
               <Box width="50%" marginTop={10}>
                 <Text fontSize={"3xl"} textDecoration="underline">
                   Why you should register for an account?
                 </Text>
                 <Text>
-                  This Portal is designed to help you with all of your benefits
-                  and entitlements support questions as well as website
-                  questions. You can save time be asking your question online.
-                  You can check frequently asked questions to find answers for
-                  common questions that we receive. You can also create a case,
-                  check your case status, and upload documents to our Case
-                  Management team. Select{" "}
-                  <Link textColor={"blue"} textDecoration={"underline"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  corrupti aspernatur veritatis sit est velit? Corporis,
+                  molestias sint ipsa natus provident sed? Eos odio dolor beatae
+                  sint ad similique deleniti.
+                </Text>
+                <Text>
+                  Select{" "}
+                  <Link
+                    textColor={"blue"}
+                    textDecoration={"underline"}
+                    href={"./register.html"}
+                  >
                     Register
                   </Link>{" "}
                   for additional information on how to register for an account.

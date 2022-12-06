@@ -10,7 +10,7 @@ import {
 import React from "react";
 import Footer from "../components/Footer";
 import theme from "../themes/theme";
-import image from "../assets/200704-N-IQ655-1063M.jpg";
+import image from "../assets/220528-F-JV039-1001T.jpg";
 import NavBar from "../components/NavBar";
 import AskAQuestion from "../components/AskAQuestion";
 
@@ -55,25 +55,31 @@ export function PartnerLoggedOutPage() {
               textAlign={"left"}
             >
               <Text width={"80%"}>
-                The DMDC Customer Contact Center Beneficiary Support Portal is
-                the access point for information and assistance on DoD
-                entitlements, benefits, medical readiness, and DMDC website
-                issues for uniformed service members, veterans, retirees, other
-                eligible beneficiaries, and their families.
+                The DMDC Customer Contact Center Partner Portal is for DMDC
+                partner organizations such as Tricare, Dental, and Service
+                Project Offices who support service member, their family
+                members, other eligible beneficiaries when there is a problem
+                with their personal, personnel or benefits and entitlement data
+                in the DEERS database.
               </Text>
               <Box width="50%" marginTop={10}>
                 <Text fontSize={"3xl"} textDecoration="underline">
                   Why you should register for an account?
                 </Text>
                 <Text>
-                  This Portal is designed to help you with all of your benefits
-                  and entitlements support questions as well as website
-                  questions. You can save time be asking your question online.
-                  You can check frequently asked questions to find answers for
-                  common questions that we receive. You can also create a case,
-                  check your case status, and upload documents to our Case
-                  Management team. Select{" "}
-                  <Link textColor={"blue"} textDecoration={"underline"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque voluptates accusamus autem error qui ut ad sequi,
+                  tempore odio aliquam rem, cupiditate ducimus laborum
+                  repudiandae laudantium pariatur sed fugiat unde?
+                </Text>
+                <Text>
+                  {" "}
+                  Select{" "}
+                  <Link
+                    textColor={"blue"}
+                    textDecoration={"underline"}
+                    href={"./register.html"}
+                  >
                     Register
                   </Link>{" "}
                   for additional information on how to register for an account.

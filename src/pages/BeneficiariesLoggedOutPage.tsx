@@ -73,7 +73,11 @@ export function BeneficiariesLoggedOutPage() {
                   common questions that we receive. You can also create a case,
                   check your case status, and upload documents to our Case
                   Management team. Select{" "}
-                  <Link textColor={"blue"} textDecoration={"underline"}>
+                  <Link
+                    textColor={"blue"}
+                    textDecoration={"underline"}
+                    href={"./register.html"}
+                  >
                     Register
                   </Link>{" "}
                   for additional information on how to register for an account.
