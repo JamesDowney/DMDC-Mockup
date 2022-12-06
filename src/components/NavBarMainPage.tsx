@@ -27,7 +27,7 @@ export default function NavBarMainPage(props: props) {
   return (
     <Flex
       as={"header"}
-      height={"100px"}
+      height={"10%"}
       align={"center"}
       backgroundImage={"linear-gradient(to bottom,#036ddb 0,#01509f 100%)"}
       flexDirection={"row"}
@@ -66,8 +66,10 @@ export default function NavBarMainPage(props: props) {
           align={"center"}
           padding={5}
         >
-          <Image src={mobileImage} paddingRight={5} />
-          <Text fontSize={"2xl"}>DMDC Customer Connect</Text>
+          <Image src={mobileImage} boxSize={"auto"} />
+          <Text fontSize={"lg"} textAlign={"center"} padding={5}>
+            DMDC Customer Connect
+          </Text>
           <Spacer />
           <MobileNavDrawer />
         </Flex>

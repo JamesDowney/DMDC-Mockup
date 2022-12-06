@@ -14,11 +14,11 @@ import image from "../assets/200704-N-IQ655-1063M.jpg";
 import NavBar from "../components/NavBar";
 import AskAQuestion from "../components/AskAQuestion";
 
-export function BeneficiariesLoggedOutPage() {
+export function PartnerLoggedOutPage() {
   return (
     <ChakraProvider theme={theme}>
       <VStack backgroundColor={"gray.200"}>
-        <NavBar loginLink={"./beneficiariesLogin.html"} />
+        <NavBar loginLink={"./partnerLogin.html"} />
         <Box
           textAlign="center"
           backgroundImage={image}
@@ -41,7 +41,7 @@ export function BeneficiariesLoggedOutPage() {
               }
               textColor={"white"}
             >
-              DMDC Beneficiary Support Portal
+              DMDC Partner Portal
             </Text>
             <Spacer minH={160} />
             <AskAQuestion />

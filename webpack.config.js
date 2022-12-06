@@ -12,8 +12,10 @@ const pages = [
   "beneficiariesLoggedOut",
   "beneficiaries",
   "partnerLogin",
+  "partnerLoggedOut",
   "partnerPortal",
   "technicalSupportLogin",
+  "technicalSupportLoggedOut",
   "technicalSupport",
 ];
 

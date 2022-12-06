@@ -17,6 +17,7 @@ import LandingWidgetPane from "./MainPage/LandingWidgetPane";
 import theme from "../themes/theme";
 import backgroundImage from "../assets/191111-A-IW468-502.jpg";
 import NavBarMainPage from "../components/NavBarMainPage";
+import AskAQuestion from "../components/AskAQuestion";
 
 export function MainPage() {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -49,32 +50,8 @@ export function MainPage() {
               >
                 DMDC Customer Connect
               </Text>
-              <Spacer minH={200} />
-              <VStack width={"60%"} align={"left"}>
-                <Text
-                  width={"fit-content"}
-                  fontSize={"5xl"}
-                  paddingLeft={5}
-                  textShadow={
-                    "-1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;"
-                  }
-                  textColor={"white"}
-                >
-                  Ask a Question
-                </Text>
-                <InputGroup>
-                  <InputRightElement
-                    children={<SearchIcon color="gray.300" />}
-                  />
-                  <Input
-                    placeholder={"Type your question here..."}
-                    _placeholder={{ color: "grey" }}
-                    background={"white"}
-                    borderColor={"black"}
-                    textColor={"black"}
-                  />
-                </InputGroup>
-              </VStack>
+              <Spacer minH={160} />
+              <AskAQuestion />
               <Box background={"gray.200"} minWidth={"100%"}>
                 <LandingMainPane isMobile={isMobile} />
                 <Spacer minHeight={5} />

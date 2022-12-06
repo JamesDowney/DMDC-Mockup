@@ -1,13 +1,9 @@
-import { SearchIcon } from "@chakra-ui/icons";
 import {
   ChakraProvider,
   Box,
   VStack,
   Spacer,
   Text,
-  Input,
-  InputGroup,
-  InputRightElement,
   SimpleGrid,
   HStack,
   Button,
@@ -27,6 +23,7 @@ import Footer from "../components/Footer";
 import LoggedInNavBar from "../components/LoggedInNavBar";
 import theme from "../themes/theme";
 import image from "../assets/220619-N-IS885-0016Y.jpg";
+import AskAQuestion from "../components/AskAQuestion";
 
 export function TechnicalSupportPage() {
   return (
@@ -57,30 +54,8 @@ export function TechnicalSupportPage() {
             >
               DMDC Technical Support Portal
             </Text>
-            <Spacer minH={200} />
-            <VStack width={"60%"} align={"left"}>
-              <Text
-                width={"fit-content"}
-                fontSize={"5xl"}
-                paddingLeft={5}
-                textShadow={
-                  "-1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;"
-                }
-                textColor={"white"}
-              >
-                Ask a Question
-              </Text>
-              <InputGroup>
-                <InputRightElement children={<SearchIcon color="gray.300" />} />
-                <Input
-                  placeholder={"Type your question here..."}
-                  _placeholder={{ color: "grey" }}
-                  background={"white"}
-                  borderColor={"black"}
-                  textColor={"black"}
-                />
-              </InputGroup>
-            </VStack>
+            <Spacer minH={160} />
+            <AskAQuestion />
             <Flex width={"100%"} backgroundColor={"gray.200"} padding={"5"}>
               <HStack
                 alignItems={"top"}

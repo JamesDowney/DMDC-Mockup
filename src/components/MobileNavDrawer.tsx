@@ -1,7 +1,7 @@
 import { IconButton } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Link, List, ListItem } from "@chakra-ui/layout";
+import { Link } from "@chakra-ui/layout";
 import {
   Drawer,
   DrawerOverlay,
@@ -10,6 +10,7 @@ import {
   DrawerBody,
   DrawerHeader,
 } from "@chakra-ui/modal";
+import { StackDivider, VStack } from "@chakra-ui/react";
 import React from "react";
 
 export default function MobileNavDrawer() {
@@ -35,43 +36,31 @@ export default function MobileNavDrawer() {
         size={"full"}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent backgroundColor={"gray.200"}>
           <DrawerHeader>
             <DrawerCloseButton boxSize={12} size={"lg"} />
           </DrawerHeader>
           <DrawerBody padding={5}>
-            <List fontSize={"6xl"} textAlign={"center"}>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Home
-                </ListItem>
-              </Link>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Knowledge
-                </ListItem>
-              </Link>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Chat
-                </ListItem>
-              </Link>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Beneficiary Portal
-                </ListItem>
-              </Link>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Partner Portal
-                </ListItem>
-              </Link>
-              <Link>
-                <ListItem _hover={{ backgroundColor: "blackAlpha.200" }}>
-                  Technical Support
-                </ListItem>
-              </Link>
-            </List>
+            <VStack
+              fontSize={"4xl"}
+              textAlign={"center"}
+              textColor={"blue"}
+              divider={
+                <StackDivider
+                  borderColor={"gray.400"}
+                  borderWidth={2}
+                  width={"80%"}
+                  alignSelf={"center"}
+                />
+              }
+            >
+              <Link>Home</Link>
+              <Link>Knowledge</Link>
+              <Link>Chat</Link>
+              <Link>Beneficiary Portal</Link>
+              <Link>Partner Portal</Link>
+              <Link>Technical Support</Link>
+            </VStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

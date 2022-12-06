@@ -30,8 +30,8 @@ export default function Footer() {
         align={"center"}
         paddingTop={4}
         paddingBottom={4}
-        paddingStart={10}
-        paddingEnd={10}
+        paddingStart={isMobile ? 4 : 10}
+        paddingEnd={isMobile ? 4 : 10}
       >
         {!isMobile && (
           <>
@@ -99,23 +99,37 @@ export default function Footer() {
         {isMobile && (
           <SimpleGrid
             columns={2}
-            spacing={3}
+            spacingX={4}
+            spacingY={6}
             alignContent={"center"}
             justifyItems={"center"}
             textAlign={"center"}
             width={"100%"}
-            fontSize={"xl"}
+            textDecoration={"underline"}
           >
             <Link
+              alignSelf={"center"}
               target={"_blank"}
               href={"https://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx"}
             >
               Accessibility/Section 508
             </Link>
-            <Link target={"_blank"} href={"https://www.usa.gov/"}>
+            <Link
+              alignSelf={"center"}
+              target={"_blank"}
+              href={"https://dwp.dmdc.osd.mil/dwp/app/privacy-security"}
+            >
+              Privacy & Security Notice
+            </Link>
+            <Link
+              alignSelf={"center"}
+              target={"_blank"}
+              href={"https://www.usa.gov/"}
+            >
               USA.gov
             </Link>
             <Link
+              alignSelf={"center"}
               target={"_blank"}
               href={
                 "https://www.dhra.mil/website/headquarters/info/nofear.shtml"
@@ -124,30 +138,31 @@ export default function Footer() {
               No Fear Act Notice
             </Link>
             <Link
-              target={"_blank"}
-              href={"https://dwp.dmdc.osd.mil/dwp/app/privacy-security"}
-            >
-              Privacy & Security Notice
-            </Link>
-            <Link
+              alignSelf={"center"}
               target={"_blank"}
               href={"https://dwp.dmdc.osd.mil/dwp/app/security-statement"}
             >
               Security Statement
             </Link>
             <Link
+              alignSelf={"center"}
               target={"_blank"}
               href={"https://dwp.dmdc.osd.mil/dwp/app/faqs"}
             >
               Contact DMDC
             </Link>
             <Link
+              alignSelf={"center"}
               target={"_blank"}
               href={"https://dwp.dmdc.osd.mil/dwp/app/main"}
             >
               DMDC Home Page
             </Link>
-            <Link target={"_blank"} href={"https://www.dhra.mil/"}>
+            <Link
+              alignSelf={"center"}
+              target={"_blank"}
+              href={"https://www.dhra.mil/"}
+            >
               DHRA Home Page
             </Link>
           </SimpleGrid>
