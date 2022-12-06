@@ -43,7 +43,7 @@ export default function AskAQuestion() {
         }
         textColor={"white"}
         textAlign={"right"}
-        href={"/knowledge.html"}
+        href={"./knowledge.html"}
       >
         Search by Category
       </Link>

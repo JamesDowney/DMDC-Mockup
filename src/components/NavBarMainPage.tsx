@@ -27,7 +27,7 @@ export default function NavBarMainPage(props: props) {
   return (
     <Flex
       as={"header"}
-      height={"10%"}
+      height={"100px"}
       align={"center"}
       backgroundImage={"linear-gradient(to bottom,#036ddb 0,#01509f 100%)"}
       flexDirection={"row"}
